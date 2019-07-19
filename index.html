@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Anime Giphy</title>
+</head>
+<body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript">
+
+            var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=H7tYAmHBtl0RU6niHKYxO1gCiQvLFgWq&q=Anime + Characters&limit=25&offset=0&rating=G&lang=en";
+
+            $.ajax({url:queryURL,method:'GET'})
+                .done(function(response){
+                    console.log(response);
+            });
+        
+        
+        </script>
+    
+</body>
+</html>
