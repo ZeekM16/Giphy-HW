@@ -52,7 +52,7 @@ $(document).ready(function(){
             $("#display-buttons").append(newButton); 
         }
     }
-
+//pause and play on click
     function imageChangeState() {          
 
         var state = $(this).attr("data-state");
@@ -69,7 +69,7 @@ $(document).ready(function(){
             $(this).attr("data-state", "still");
         }   
     }
-// Click function pushing variable and arrays
+
     $("#submitPress").on("click", function(){
 
         var input = $("#user-input").val().trim();
